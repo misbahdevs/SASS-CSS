@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+$body-font: "Quicksand", sans-serif;
+$body-bg: #f8f8f8;
+
+body {
+  font-family: $body-font;
+  background-color: $body-bg;
+}
+main {
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  figure {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0.3rem;
+    box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.1);
+  }
+
+  figcaption {
+    font-weight: 700;
+    color: rgb(5, 122, 108);
+  }
+}
+
+@media screen and (max-width: 567px) {
+  main {
+    width: 95%;
+  }
+}
