@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+// menggunakan css variable biasa
+// :root {
+// --body-font: "Quicksand", sans-serif;
+// }
+//
+// body {
+// font-family: var(--body-font);
+// }
+//
+
+// menggunakan variable sass
+// $body-font: "Quicksand", sans-serif;
+//
+// body {
+// font-family: $body-font;
+// }
+
+// menggunakan Map di sass
+$body-font: "Quicksand", sans-serif;
+$alert: (
+  "success": green,
+  "warning": orange,
+  "danger": red,
+);
+body {
+  font-family: $body-font;
+}
+h1 {
+  color: map-get($map: $alert, $key: "warning");
+}
