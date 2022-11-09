@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+$body-font: "Quicksand", sans-serif;
+
+body {
+  font-family: $body-font;
+  font-weight: 600;
+}
+a {
+  font-weight: bold;
+}
+// ul {
+// margin: 0;
+// padding: 0;
+// list-style: none;
+// }
+// .header ul li,
+// .footer ul li {
+// display: inline-block;
+// }
+//
+// .header ul li:hover a {
+// color: red;
+// }
+//
+// .footer ul li:hover a {
+// color: blue;
+// }
+//
+
+// membuat mixin
+@mixin inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+ul {
+  list-style: none;
+}
+
+.header ul {
+  @include inline-list();
+
+  li {
+    background-color: red;
+  }
+}
+
+// mixin flex-box
+@mixin consep(
+  $display: flex,
+  $direction: row,
+  $justify: center,
+  $align: center
+) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+.container {
+  width: 400px;
+  height: 400px;
+  @include consep(flex, column-reverse, center, center);
+  background-color: #9c9999;
+
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+.footer ul {
+  @include inline-list();
+
+  li {
+    background-color: green;
+  }
+}
