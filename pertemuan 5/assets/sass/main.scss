@@ -1,0 +1,23 @@
+// menggunakan import
+@use "modules/submodules/header";
+@use "modules/submodules/container";
+@use "modules/submodules/footer";
+
+// ul {
+// margin: 0;
+// padding: 0;
+// list-style: none;
+// }
+// .header ul li,
+// .footer ul li {
+// display: inline-block;
+// }
+//
+// .header ul li:hover a {
+// color: red;
+// }
+//
+// .footer ul li:hover a {
+// color: blue;
+// }
+//

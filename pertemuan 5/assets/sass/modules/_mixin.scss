@@ -1,0 +1,21 @@
+@mixin inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+@mixin consep(
+  $display: flex,
+  $direction: row,
+  $justify: center,
+  $align: center
+) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
