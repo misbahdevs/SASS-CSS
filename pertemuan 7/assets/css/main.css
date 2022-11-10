@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f8f8f8;
+}
+
+/*
+  adjust-color($color, $red: null, $green: null, $blue: null, $hue: null, $saturation: null, $lightness: null, $whiteness: null, $blackness: null, $alpha: null)
+*//*# sourceMappingURL=main.css.map */

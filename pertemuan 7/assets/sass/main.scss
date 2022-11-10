@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+$body-font: "Quicksand", sans-serif;
+
+body {
+  font-family: $body-font;
+  background-color: #f8f8f8;
+}
+
+// built in modules: color
+/*
+  adjust-color($color, $red: null, $green: null, $blue: null, $hue: null, $saturation: null, $lightness: null, $whiteness: null, $blackness: null, $alpha: null)
+*/
+// h1 {
+// color: adjust-color($color: salmon, $green: 50, $blue: 100);
+// font-size: 3em;
+// text-align: center;
+// }
+
+// adjust-hue($color, $degree);
+// h1 {
+// text-align: center;
+// color: adjust-hue($color: salmon, $degrees: 270deg);
+// }
+
+// complement
+// dapat mengambil warna yang 180deg dari warna dasar
+// h1 {
+// color: complement($color: salmon);
+// }
+
+// darken
+// h1 {
+// color: darken($color: salmon, $amount: 20%);
+// }
+
+// lighten
+// h1 {
+// color: lighten($color: salmon, $amount: 20);
+// }
+
+// saturate
+// h1 {
+// color: saturate($color: salmon, $amount: 50%);
+// }
+//
+// desaturate
+// h1 {
+// color: desaturate($color: salmon, $amount: 50%);
+// }
+
+// grayscale
+// h1 {
+// color: grayscale($color: salmon);
+// }
+//
+
+// mix
+// h1 {
+// color: mix(salmon, blue, 50%);
+// }
+
+// fade-in
+// h1 {
+// color: fade-in(rgba(250, 128, 114, 0.2), 0.5);
+// }
+
+// fade-out
+// h1 {
+// color: fade-out($color: salmon, $amount: 0.5);
+// }
+//
