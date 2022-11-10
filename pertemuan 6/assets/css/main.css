@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f8f8f8;
+}
+
+.nav-pic {
+  width: 80px;
+  border: 5px solid salmon;
+  border-radius: 50%;
+}
+
+.hero-pic {
+  width: 200px;
+  border: 5px solid salmon;
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 2em;
+  border-left-color: salmon;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(1) {
+  text-align: center;
+  background-color: #fb8d81;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(2) {
+  text-align: center;
+  background-color: #fb9b90;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(3) {
+  text-align: center;
+  background-color: #fca89e;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(4) {
+  text-align: center;
+  background-color: #fcb5ad;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(5) {
+  text-align: center;
+  background-color: #fdc3bc;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(6) {
+  text-align: center;
+  background-color: #fdd0cb;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(7) {
+  text-align: center;
+  background-color: #feddd9;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(8) {
+  text-align: center;
+  background-color: #feeae8;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(9) {
+  text-align: center;
+  background-color: #fff8f7;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(10) {
+  text-align: center;
+  background-color: white;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(1) {
+  text-align: center;
+  background-color: #f97363;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(2) {
+  text-align: center;
+  background-color: #f96554;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(3) {
+  text-align: center;
+  background-color: #f85846;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(4) {
+  text-align: center;
+  background-color: #f84b37;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(5) {
+  text-align: center;
+  background-color: #f73d28;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(6) {
+  text-align: center;
+  background-color: #f73019;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(7) {
+  text-align: center;
+  background-color: #f6230b;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(8) {
+  text-align: center;
+  background-color: #e91f08;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(9) {
+  text-align: center;
+  background-color: #db1d08;
+}
+
+.gradient {
+  list-style: none;
+}
+.gradient li:nth-child(10) {
+  text-align: center;
+  background-color: #cc1b07;
+}
+
+.socials {
+  list-style: none;
+  font-size: 1em;
+}
+.socials .github {
+  padding: 5px;
+  color: #fff;
+  background-color: #171515;
+}
+.socials .gitlab {
+  padding: 5px;
+  color: #fff;
+  background-color: #fc6d26;
+}
+.socials .linkedin {
+  padding: 5px;
+  color: #fff;
+  background-color: #0e76a8;
+}/*# sourceMappingURL=main.css.map */

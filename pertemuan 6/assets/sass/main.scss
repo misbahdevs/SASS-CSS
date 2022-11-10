@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+$body-font: "Quicksand", sans-serif;
+body {
+  font-family: $body-font;
+  background-color: #f8f8f8;
+}
+
+//menggunakan @if
+@mixin picture($size, $circle: false) {
+  width: $size;
+  border: 5px solid salmon;
+
+  @if $circle {
+    border-radius: 50%;
+  }
+}
+
+.nav-pic {
+  @include picture(80px, true);
+}
+
+.hero-pic {
+  @include picture(200px, false);
+}
+// menggunakan @else
+$dark-bg: #000;
+$dark-text: #fff;
+$light-bg: #fff;
+$light-text: #000;
+
+@mixin theme($theme: light) {
+  @if $theme == light {
+    background-color: $light-bg;
+    color: $light-text;
+  } @else {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+}
+
+header {
+  @include theme(light);
+}
+
+// menggunakan @else if
+@mixin position-triangle($size, $color, $direction) {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: $size;
+
+  @if $direction == top {
+    border-bottom-color: $color;
+  } @else if $direction == bottom {
+    border-top-color: $color;
+  } @else if $direction == left {
+    border-right-color: $color;
+  } @else {
+    border-left-color: $color;
+  }
+}
+.triangle {
+  @include position-triangle(2em, salmon, right);
+}
+
+// menggunakan for
+$color: salmon;
+@for $i from 1 to 11 {
+  .gradient {
+    list-style: none;
+
+    li:nth-child(#{$i}) {
+      text-align: center;
+      background-color: lighten($color, $i * 3%);
+    }
+  }
+}
+
+// mwnggunakan while
+$color: salmon;
+$i: 1;
+@while $i < 11 {
+  .gradient {
+    list-style: none;
+
+    li:nth-child(#{$i}) {
+      text-align: center;
+      background-color: darken($color, $i * 3%);
+    }
+  }
+
+  $i: $i + 1;
+}
+
+$social-color: (
+  "github": #171515,
+  "gitlab": #fc6d26,
+  "linkedin": #0e76a8,
+);
+
+.socials {
+  list-style: none;
+  font-size: 1em;
+
+  @each $social, $color in $social-color {
+    .#{$social} {
+      padding: 5px;
+      color: #fff;
+      background-color: $color;
+    }
+  }
+}
