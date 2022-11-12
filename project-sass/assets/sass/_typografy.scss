@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+$body-font: "Quicksand", sans-serif;
+
+@mixin body-font {
+  font-family: $body-font;
+}
+
+@mixin subtitle {
+  // font-size: ;
+}

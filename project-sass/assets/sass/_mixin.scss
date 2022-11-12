@@ -1,0 +1,30 @@
+@use "variable" as var;
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin btn-more {
+  background-color: var.$primary-color;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+@mixin subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var.$text-color;
+  font-weight: 600;
+}
+
+@mixin title-des {
+  font-size: 2.3em;
+  font-weight: 700;
+  color: var.$primary-color;
+}
+
+@mixin text-des {
+  color: var.$text-color;
+}

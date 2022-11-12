@@ -1,17 +1,279 @@
-<!-- <a href="https://www.freepik.com/free-vector/outdoor-sport-landing-page-template_6210986.htm#query=fath%20landing%20page&position=11&from_view=search&track=ais">Image by pikisuperstar</a> on Freepik -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Belajar Sass Css | Project Sass</title>
-    <link rel="stylesheet" href="assets/main/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <div class="container">
+        <a href="" class="brand">
+          <i class="uil uil-box"></i>
+          <p>Learn Sass</p>
+        </a>
+
+        <div class="toggle">
+          <i class="uil uil-list-ui-alt"></i>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#hero-content"><i class="uil uil-estate"></i></a>
+          </li>
+          <li>
+            <a href="#about"><i class="uil uil-question"></i></a>
+          </li>
+          <li>
+            <a href="#contact"><i class="uil uil-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="landing">
+      <section class="hero-content" id="hero-content">
+        <div class="container x-content">
+          <div class="x-left">
+            <span class="stagger1">Welcome to my website</span>
+            <h1 class="stagger1">Make a Design, And Implements To Code</h1>
+            <p class="stagger1">
+              Click for you know i’m learn about what to create this website
+            </p>
+            <a href="" class="btn btn-more stagger1">More Information</a>
+          </div>
+          <div class="x-right">
+            <svg
+              class="svg-hero"
+              width="498"
+              height="446"
+              viewBox="0 0 498 446"
+              fill="none"
+            >
+              <rect
+                class="requare-anim"
+                x="200"
+                y="69"
+                width="100"
+                height="100"
+                rx="10"
+                fill="#FF54A6"
+              />
+              <rect
+                class="requare-anim"
+                x="100"
+                y="173"
+                width="100"
+                height="100"
+                rx="10"
+                fill="#FF54A6"
+                fill-opacity="0.3"
+              />
+              <rect
+                class="requare-anim"
+                y="69"
+                width="100"
+                height="100"
+                rx="10"
+                fill="#FF54A6"
+              />
+              <rect
+                class="requare-anim"
+                x="202"
+                y="176"
+                width="95"
+                height="95"
+                rx="47.5"
+                fill="#00F0FF"
+              />
+              <rect
+                class="requare-anim"
+                y="278"
+                width="100"
+                height="100"
+                rx="10"
+                fill="#D9D9D9"
+              />
+              <rect
+                class="requare-anim"
+                x="200"
+                y="278"
+                width="100"
+                height="100"
+                rx="10"
+                fill="#FF54A6"
+              />
+              <rect
+                class="requare-anim"
+                x="300"
+                y="173"
+                width="100"
+                height="100"
+                rx="10"
+                fill="#D9D9D9"
+              />
+              <path
+                class="elipse-linear"
+                d="M497.35 151.642C497.35 313.737 363.259 445.142 197.85 445.142C32.4403 445.142 55.8496 348.237 55.8496 186.142C55.8496 24.0461 9.94032 0.141632 175.35 0.141632C340.759 0.141632 497.35 -10.4539 497.35 151.642Z"
+                fill="url(#paint0_linear_15_108)"
+              />
+              <circle
+                class="requare-anim"
+                cx="52"
+                cy="226"
+                r="50"
+                fill="url(#paint1_radial_15_108)"
+              />
+              <defs class="requare-anim">
+                <linearGradient
+                  id="paint0_linear_15_108"
+                  x1="511.85"
+                  y1="194.142"
+                  x2="318.85"
+                  y2="194.142"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FF54A6" />
+                  <stop offset="1" stop-color="#FF54A6" stop-opacity="0" />
+                </linearGradient>
+                <radialGradient
+                  id="paint1_radial_15_108"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(52 226) rotate(90) scale(50)"
+                >
+                  <stop stop-color="#FF54A6" />
+                  <stop offset="1" stop-color="#FF54A6" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container x-content">
+          <div class="x-left stagger2">
+            <p class="subtitle">why we are there?</p>
+            <h3 class="title-des">About</h3>
+            <p class="text-des">
+              Lorem ipsum dolor sit amet consectetur. Sit nisl cras suscipit
+              dui. Eget habitant duis mus bibendum. Sollicitudin ut neque elit
+              laoreet est pulvinar elementum. Facilisi suspendisse vitae augue
+              pretium volutpat donec cursus vitae adipiscing.
+            </p>
+          </div>
+          <div class="x-right stagger2">
+            <img src="assets/img/sass.png" alt="sass img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="activity">
+        <div class="container x-content">
+          <h1 class="title-des stagger3">i’m learn about what</h1>
+          <div class="x-content-box stagger3">
+            <div class="box">
+              <h3>Concept</h3>
+            </div>
+            <div class="box">
+              <h3>Nesting</h3>
+            </div>
+            <div class="box">
+              <h3>Variable</h3>
+            </div>
+            <div class="box">
+              <h3>Mixin</h3>
+            </div>
+            <div class="box">
+              <h3>Modules</h3>
+            </div>
+            <div class="box">
+              <h3>Flow Control</h3>
+            </div>
+            <div class="box">
+              <h3>Built in Modules</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <span class="subtitle stagger4">What do you see is good?</span>
+          <h3 class="title-des stagger4">Contact</h3>
+          <div class="x-content stagger4">
+            <div class="x-left">
+              <img src="assets/img/contact.svg" alt="contact img" />
+            </div>
+            <div class="x-right">
+              <form action="" method="post">
+                <div class="mb-3">
+                  <label for="email">Email</label>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="message"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="20"
+                    rows="5"
+                    placeholder="message"
+                  ></textarea>
+                </div>
+                <button type="button" class="btn btn-more">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy;Copyright 2022, Learn Sass. Coded by <a href="">misbahdev</a>
+        </p>
+      </div>
+    </footer>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
